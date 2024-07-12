@@ -1,0 +1,52 @@
+.overview{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 70px;
+    color: white;
+  
+  
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    flex: 1;
+    text-align: center;
+    background-color: #354C66;
+  
+}
+.stats-item:nth-child(even){
+background-color: #21B573;
+}
+
+.stats-item h3 {
+   font-family: 'KoHo,sans-serif';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.stats-item p {
+    margin: 5px 0 0;
+}
+
+
+.rating-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 446px;
+   position: relative;
+   top: 10px;
+   
+}
+
+@media screen and (max-width:992px) {
+        .overview{
+            gap: 10px;
+        }
+}

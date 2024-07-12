@@ -1,0 +1,48 @@
+.brand{
+    display: flex;
+        position: relative;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 70px;
+  
+
+    
+       
+}
+.brand-content  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+ 
+}
+.mySwiper{
+text-align: center;
+
+
+}
+
+.brand-content .arrow_brand{
+    width: 14.83px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+   
+}
+
+
+@media screen and (max-width:1000px) {
+   
+    .brand-content {
+          
+
+    gap: 24px;
+    width: 100%;
+        }
+              
+}
+
+    

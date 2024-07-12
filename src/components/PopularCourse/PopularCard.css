@@ -1,0 +1,83 @@
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-card div {
+    display: flex;
+    align-items: center;
+}
+
+.header-card img {
+    margin-right: 8px;
+}
+
+.header-card p {
+    color: white;
+    font-size: 16px;
+}
+.design-btn {
+    padding: 6px 30px;
+    border: 2px solid #D9ECFF80;
+    color: #FFF;
+    background-color: #D9ECFF80;
+    border-radius: 17.5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+}
+.design-btn:hover{
+    background-color: #21B573;
+    transition: 0.4s;
+   
+}
+.footer-card {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-card img{
+    width: 50px;
+    height: 50px;
+}
+.join-btn {
+    padding: 16px 28px;
+    border-radius: 47px;
+    background-color: #21B573;
+    box-shadow: 0 1px 2px 0 #1018280D;
+    border: none;
+    width: 130px;
+    height: 37px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    border: 1px solid #21B573;
+}
+.join-btn:hover{
+    background-color: transparent;
+    border: 1px solid #21B573;
+    transition: 0.4s all ;
+}
+.lesson  {
+    width: 20px;
+    height: 16px;
+   position: relative;
+   left: 11%;
+ margin-left: 4px;
+}
+.run-icon{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+    margin-right: 5px;
+}

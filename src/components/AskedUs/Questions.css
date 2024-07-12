@@ -1,0 +1,43 @@
+.question-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    color: white;
+  
+}
+.question-header{
+   display: flex;
+   position: relative;
+   top: 30px;
+   flex-direction: column;
+   gap: 10px;
+}
+.question-item h6 {
+    font-weight: 600px;
+    line-height: 28px;
+    margin: 0;
+    font-size: 22px;
+    color: #dfefff;
+}
+
+.question-item .answer {
+    font-weight: 400;
+    font-size: 16px;
+     color: #c3c7ca;
+}
+
+.question-item .toggle-icon {
+    position: absolute;
+    right: 20px;
+   
+    font-size: 20px;
+    color: white;
+
+}
+
+
+     
