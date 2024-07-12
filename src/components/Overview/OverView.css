@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
+    
     margin-top: 70px;
     color: white;
   
@@ -18,7 +18,8 @@
     flex: 1;
     text-align: center;
     background-color: #354C66;
-  
+    flex: 1 1 30%;
+        margin: 10px;/
 }
 .stats-item:nth-child(even){
 background-color: #21B573;
@@ -42,6 +43,7 @@ background-color: #21B573;
     width: 446px;
    position: relative;
    top: 10px;
+    width: 100%;
    
 }
 
@@ -49,4 +51,41 @@ background-color: #21B573;
         .overview{
             gap: 10px;
         }
+                .stats-item {
+                    flex: 1 1 45%;
+                   
+                }
+        
+                .rating-section {
+                    flex-direction: column;
+              
+                }
+
+      @media screen and (max-width: 768px) {
+    .stats-item {
+        flex: 1 1 100%;
+       
+    }
+
+    .stats-item h3 {
+        font-size: 24px;
+       
+    }
+
+    .stats-item p {
+        font-size: 14px;
+   
+    }
+}
+}
+@media screen and (max-width: 576px) {
+    .stats-item h3 {
+        font-size: 20px;
+     
+    }
+
+    .stats-item p {
+        font-size: 12px;
+
+    }
 }

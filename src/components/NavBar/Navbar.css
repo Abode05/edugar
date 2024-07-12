@@ -124,11 +124,15 @@ nav button{
                    
                 }
 @media screen and (max-width:1000px) {
+    nav{
+        text-align: center;
+    }
    .navitem,nav button{
          display: none;
     }
         .burger {
             display: block;
             z-index: 999;
+        
         }
 }
