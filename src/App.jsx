@@ -14,7 +14,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div >
+              <Navbar />
       <Hero />
       <OverView />
       <TopCategory />
@@ -24,6 +25,8 @@ function App() {
       <Brand />
       <Footer />
     
+    </div>
+
     </>
   )
 }

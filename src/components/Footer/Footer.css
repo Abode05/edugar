@@ -1,5 +1,5 @@
-.footer{
-display: flex;
+.footer {
+    display: flex;
     position: relative;
     width: 95%;
     left: 50%;
@@ -7,54 +7,64 @@ display: flex;
     margin-top: 100px;
     color: #FFFFFF;
     justify-content: space-between;
-gap: 74px;
-flex-wrap: wrap;
-margin-bottom: 20px;
+    gap: 74px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
 
-}
-.footer .about{
+.footer .about {
     width: 361px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .about span {
     color: #21B573;
 }
-.quick-links h1,.legal h1,.subscriber h1{
+
+.quick-links h1,
+.legal h1,
+.subscriber h1 {
     font-size: 25px;
-        font-family: 'KoHo,sans-serif';
-        font-weight: 700;
-        line-height: 28px;
+    font-family: 'KoHo, sans-serif';
+    font-weight: 700;
+    line-height: 28px;
 }
-.quick-links li,.legal li{
+
+.quick-links li,
+.legal li {
     list-style: none;
     margin: 0;
     padding: 2px 0;
-    
 }
-.quick-links a,.legal a{
-text-decoration: none;
-color: #D9ECFF;
+
+.quick-links a,
+.legal a {
+    text-decoration: none;
+    color: #D9ECFF;
 }
+
 .quick-links a:hover,
-.legal a:hover{
+.legal a:hover {
     color: #21B573;
     transition: 0.1s;
 }
+
 .quick-links ul,
-.legal ul{
-  margin-top: 20px;
+.legal ul {
+    margin-top: 20px;
 }
-.subscriber{
+
+.subscriber {
     display: flex;
     flex-direction: column;
     gap: 20px;
-   margin: auto;
-   justify-content: center;
-
+    margin: auto;
+    justify-content: center;
 }
-.subscriber input[type="email"]{
+
+.subscriber input[type="email"] {
     width: 100%;
     border: none;
     background-color: transparent;
@@ -63,16 +73,14 @@ color: #D9ECFF;
     color: #D9ECFF;
     font-size: 14px;
     font-weight: 700;
-    
 }
-.subscriber input[type="email"]:focus{
-   
-   
+
+.subscriber input[type="email"]:focus {
     transition: 0.7s all;
-    outline: 1px solid #FFFFFF; 
-    
+    outline: 1px solid #FFFFFF;
 }
-.subscriber button{
+
+.subscriber button {
     background-color: #21B573;
     border-radius: 30px;
     border: none;
@@ -82,11 +90,59 @@ color: #D9ECFF;
     font-size: 15px;
     font-weight: 500;
     line-height: 22.5px;
-    
-
-
 }
-.subscriber button:hover{
+
+.subscriber button:hover {
     background-color: #0b854e;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer>div {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer .about {
+        width: 100%;
+    }
+
+    .quick-links h1,
+    .legal h1,
+    .subscriber h1 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        margin-top: 50px;
+    }
+
+    .quick-links h1,
+    .legal h1,
+    .subscriber h1 {
+        font-size: 40px;
+    }
+
+    .quick-links a,
+    .legal a {
+        font-size: 24px;
+       
+    }
+
+    .subscriber input[type="email"] {
+        font-size: 12px;
+    }
+
+    .subscriber button {
+        font-size: 14px;
+    }
 }

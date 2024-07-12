@@ -44,5 +44,11 @@ text-align: center;
         }
               
 }
-
+@media screen and(max-width:760px) {
+    .mySwiper {
+        display: flex;
+        gap: 15px;
+        margin-left: 15px ;
+    }
+}
     

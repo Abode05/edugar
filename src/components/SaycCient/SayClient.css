@@ -13,6 +13,8 @@
 .container .background {
     position: absolute;
     z-index: -1;
+    width: 100%;
+    height: auto;
 }
 
 .content {
@@ -31,13 +33,15 @@
 .content p {
     font-size: 16px;
     font-weight: 400;
+    padding: 0 20px;
 }
 
 .content h1 {
     font-family: 'KoHo, sans-serif';
     font-weight: 700;
-    font-size: 50px;
+    font-size: 44px;
     text-align: center;
+    margin: 0;
 }
 
 .content h4 {
@@ -45,6 +49,7 @@
     font-weight: 600;
     line-height: 28px;
     text-align: center;
+    margin: 0;
 }
 
 .clients {
@@ -82,13 +87,21 @@
 }
 
 @media screen and (max-width: 1100px) {
+.background{
+    display: none;
+}
     .content {
         width: 100%;
+        margin-top: 50px;
+        
+    }
+    .content h1{
+        border-bottom: 2px solid #FFFFFF;
     }
 
     .clients {
         width: 100%;
-        cursor: pointer;
+       
     }
 
     .profile:hover {
@@ -98,5 +111,33 @@
 
     .arrow_client {
         display: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .content {
+        
+        padding: 5px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .content h4 {
+        font-size: 18px;
+    }
+
+    .clients {
+        gap: 15px;
+    }
+
+    .profile {
+        width: 80px;
+        height: 100px;
     }
 }
