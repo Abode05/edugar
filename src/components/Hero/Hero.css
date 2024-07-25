@@ -137,4 +137,6 @@ object-fit: contain;
         width: 80px;
         padding: 10px 15px;
     }
+    .hero-content span img{
+        width:120px;}
 }
