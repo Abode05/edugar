@@ -17,6 +17,28 @@ const Brand = () => {
           navigation={true}
           modules={[Navigation]} 
           className="mySwiper"
+           breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
         >
           {
             brandData.map((brand, index) => (
