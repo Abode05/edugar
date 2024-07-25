@@ -25,6 +25,28 @@ const TopCategory = () => {
             hideOnClick: true,
           }}
           className="card-category"
+            breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
         >
           {topcategory.map((item, index) => (
             <SwiperSlide key={index} className='ix'>
